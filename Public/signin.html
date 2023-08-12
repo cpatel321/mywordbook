@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gpt.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container"> 
+        <img class="logo" src="logo.png" alt="Logo">
+        <div class="logo">My Word Book</div>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color: black;text-decoration: none;">Home</a></li>
+                <li><a href="history.html" style="color: black;text-decoration: none;">My Words</a></li>
+                <li><a href="signin.html" style="color: black;text-decoration: none;">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="auth-section">
+            <form id="signin-form" action="/api/login" >
+            <h1>Coming Soon</h1>
+            <!-- <input type="text" placeholder="Username" id="username" name="username" required>
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            <button>Sign In</button>
+            <button>Sign Up</button> -->
+            <div id="repeat-password-field" style="display: none;">
+                <!-- <label for="repeat-password">Repeat Password:</label> -->
+                <input type="password" id="repeat-password" name="repeat-password" placeholder="repeat password"><br>
+              </div>
+
+            </form>
+            <div id="signin-message"></div>
+        </div>
+    </main>
+    <script >
+    $(document).ready(function() {
+    $('#login-form').submit(function(event) {
+      event.preventDefault();
+      
+      const username = $('#username').val();
+      const password = $('#password').val();
+
+      $.post('/api/login', { username: username, password: password })
+        .done(function(data) {
+          $('#login-message').text(data.message).css('color', 'green');
+        })
+        .fail(function(xhr, status, error) {
+          const errorMessage = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : 'An error occurred';
+          $('#login-message').text(errorMessage).css('color', 'red');
+        });
+    });
+  });
+    </script>
+</body>
+</html>
