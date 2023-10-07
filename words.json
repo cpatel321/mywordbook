@@ -1,12 +1,32 @@
 [
-    {
-      "id": 1,
-      "word": "example",
-      "meaning": "a representative form"
-    },
-    {
-      "id": 2,
-      "word": "test",
-      "meaning": "a procedure intended to establish the quality"
-    }
+  {
+    "id": 1,
+    "word": "example",
+    "meaningG": "a representative form",
+    "meaning": "a representative form"
+  },
+  {
+    "id": 2,
+    "word": "test",
+    "meaningG": "a representative form",
+    "meaning": "a procedure intended to establish the quality"
+  },
+  {
+    "id": 3,
+    "word": "ab",
+    "meaningG": "The fifth month of the Jewish year according to the ecclesiastical reckoning, the eleventh by the civil computation, coinciding nearly with August. W. Smith.",
+    "meaning": "d"
+  },
+  {
+    "id": 4,
+    "word": "adsf",
+    "meaningG": "df",
+    "meaning": "ad"
+  },
+  {
+    "id": 5,
+    "word": "legend",
+    "meaningG": "1. That which is appointed to be read; especially, a chronicle or register of the lives of saints, formerly read at matins, and in the refectories of religious houses. 2. A story respecting saints; especially, one of a marvelous nature. Addison. 3. Any wonderful story coming down from the past, but not verifiable by historical record; a myth; a fable. And in this legend all that glorious deed. Read, whilst you arm you. Fairfax. 4. An inscription, motto, or title, esp. one surrounding the field in a medal or coin, or placed upon an heraldic shield or beneath an engraving or illustration. Golden legend. See under Golden.\n\nTo tell or narrate, as a legend. Bp. Hall.",
+    "meaning": "legaand"
+  }
 ]

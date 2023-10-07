@@ -1,12 +1,10 @@
 $(document).ready(function () {
 
-
-
     function displayWord(wordData) {
         const wordItem = $("<div class='word-item'></div>");
         const wordHeader = $("<h3></h3>").text(wordData.word);
-        const meaningPara = $("<p></p>").text("Meaning: " + wordData.meaning);
-        const meaningParaG = $("<p></p>").text("Google Translate: " + wordData.meaningG);
+        const meaningPara = $("<p></p>").text("Custom Meaning: " + wordData.meaning);
+        const meaningParaG = $("<p></p>").text("Meaning: " + wordData.meaningG);
 
         wordItem.append(wordHeader,meaningParaG, meaningPara);
         // wordItem.append(wordHeader, meaningPara);
@@ -19,6 +17,9 @@ $(document).ready(function () {
         method: "GET",
         success: function (data) {
             // Display the existing words
+            data.sort(function (a, b) {
+                return b.id - a.id; // Sort by numerical id in descending order
+            });
             data.forEach(function (wordData) {
                 displayWord(wordData);
             });

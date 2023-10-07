@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="gpt.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <title>Word Collection</title>
 </head> 
 <body>
@@ -28,7 +29,7 @@
                   <input type="text" id="word" placeholder="Enter a word">
                   <div class="meaning-section">
                   <div class="meaning">Meaning: </div>
-                  <input type="text" id="meaningG" placeholder="Google Translate">
+                  <textarea type="text" id="meaningG" placeholder="Dictionary Meaning" style="width: 100%; height: 108px;"></textarea>
                   <div class="meaning">Custom definition:</div>
                   <input type="text" id="meaning" placeholder="Enter Custom Meaning">
               </div>
@@ -44,10 +45,10 @@
         
     </main>
     <div id="wordList" >
-        <div class='word-item'>
+        <!-- <div class='word-item'>
             <h3>Example</h3>
             <p>Meaning: Sample meaning</p>
-        </div>
+        </div> -->
     </div>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>

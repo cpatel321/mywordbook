@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <title>Register</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img class="logo" src="logo.png" alt="Logo">
+      <div class="logo">My Word Book</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" style="color: black;text-decoration: none;">Home</a></li>
+        <li><a href="history.html" style="color: black;text-decoration: none;">My Words</a></li>
+        <li><a href="signin.html" style="color: black;text-decoration: none;">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="auth-section">
+      <form id="signup-form">
+        <!-- <h1>Coming Soon</h1> -->
+        <input type="text" placeholder="Username" id="username" name="username" required>
+        <input type="password" placeholder="Password" id="password" name="password" required>
+        <input type="password" id="repeat-password" name="repeat-password" placeholder="repeat password">
+        <button type="submit">Register</button>
+    </div>
+    <s id="#error"></s>
+
+    </form>
+    <div id="signin-message"></div>
+    </div>
+  </main>
+  <div class="footer">
+    <p>&copy; <a href="https://github.com/cpatel321">Chandrabhan Patel</a></p>
+    <p>Dictionary Data: <a
+        href="https://github.com/matthewreagan/WebstersEnglishDictionary/tree/master">WebstersEnglishDictionary</a></p>
+    Logo: <a href="https://www.flaticon.com/free-icons/question-mark" title="question-mark icons">Question-mark icons
+      created by Smashicons - Flaticon</a>
+  </div>
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="register.js"></script>
+</body>
+
+</html>
