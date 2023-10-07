@@ -21,10 +21,10 @@ $(document).ready(function(){
 
                 if(data.success===true){
                     window.location.href="/index.html";
-                    document.cookie = "userid="+data.userid;
+                    document.cookie = "token="+data.token;
                 }
                 else{
-                    window.location.href="/failed.html";
+                    alert("Invalid Credentials")
                 }
             
             },

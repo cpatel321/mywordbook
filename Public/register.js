@@ -4,8 +4,12 @@ $(document).ready(function(){
         event.preventDefault();
 
         const username= $("#username").val();
-        // console.log("username",username)
         const password=$("#password").val();
+        const repeatPassword=$("#repeat-password").val();
+        if (password!==repeatPassword){
+            alert("Passwords don't match")
+            return;
+        }
 
 
 
@@ -19,10 +23,12 @@ $(document).ready(function(){
                 $("#password").val("");
                 $("#repeat-password").val("");
                 if(data.success===true){
+                    document.cookie = "token="+data.token;
                     window.location.href="/index.html";
+                    
                 }
                 else{
-                    window.location.href="/useralreadyesists.html";
+                    alert("Username already exists")
                 }
             
             },

@@ -1,32 +1,30 @@
 [
   {
     "id": 1,
-    "word": "example",
-    "meaningG": "a representative form",
-    "meaning": "a representative form"
+    "userid": 2,
+    "word": "legend",
+    "meaningG": "1. That which is appointed to be read; especially, a chronicle or register of the lives of saints, formerly read at matins, and in the refectories of religious houses. 2. A story respecting saints; especially, one of a marvelous nature. Addison. 3. Any wonderful story coming down from the past, but not verifiable by historical record; a myth; a fable. And in this legend all that glorious deed. Read, whilst you arm you. Fairfax. 4. An inscription, motto, or title, esp. one surrounding the field in a medal or coin, or placed upon an heraldic shield or beneath an engraving or illustration. Golden legend. See under Golden.\n\nTo tell or narrate, as a legend. Bp. Hall.",
+    "meaning": "asdf"
   },
   {
     "id": 2,
-    "word": "test",
-    "meaningG": "a representative form",
-    "meaning": "a procedure intended to establish the quality"
+    "userid": 2,
+    "word": "has",
+    "meaningG": "3d pers. sing. pres. of Have.",
+    "meaning": "has is has"
   },
   {
     "id": 3,
-    "word": "ab",
-    "meaningG": "The fifth month of the Jewish year according to the ecclesiastical reckoning, the eleventh by the civil computation, coinciding nearly with August. W. Smith.",
-    "meaning": "d"
+    "userid": 2,
+    "word": "leader",
+    "meaningG": "1. One who, or that which, leads or conducts; a guide; a conductor. Especially: (a) One who goes first. (b) One having authority to direct; a chief; a commander. (c) (Mus.) A performer who leads a band or choir in music; also, in an orchestra, the principal violinist; the one who plays at the head of the first violins. (d) (Naut.) A block of hard wood pierced with suitable holes for leading ropes in their proper places. (e) (Mach.) The principal wheel in any kind of machinery. [Obs. or R.] G. Francis. (f) A horse placed in advance of others; one of the forward pair of horses. He forgot to pull in his leaders, and they gallop away with him at times. Hare. (g) A pipe for conducting rain water from a roof to a cistern or to the ground; a conductor. (h) (Fishing)  A net for leading fish into a pound, weir, etc. ; also, a line of gut, to which the snell of a fly hook is attached. (i) (Mining) A branch or small vein, not important in itself, but indicating the proximity of a better one. 2. The first, or the principal, editorial article in a newspaper; a leading or main editorial article. 3. (Print.) (a) A type having a dot or short row of dots upon its face. (b) pl.  a row of dots, periods, or hyphens, used in tables of contents, etc., to lead the eye across a space to the right word or number. Syn. -- chief; chieftain; commander. See Chief.",
+    "meaning": "नेता"
   },
   {
     "id": 4,
-    "word": "adsf",
-    "meaningG": "df",
-    "meaning": "ad"
-  },
-  {
-    "id": 5,
-    "word": "legend",
-    "meaningG": "1. That which is appointed to be read; especially, a chronicle or register of the lives of saints, formerly read at matins, and in the refectories of religious houses. 2. A story respecting saints; especially, one of a marvelous nature. Addison. 3. Any wonderful story coming down from the past, but not verifiable by historical record; a myth; a fable. And in this legend all that glorious deed. Read, whilst you arm you. Fairfax. 4. An inscription, motto, or title, esp. one surrounding the field in a medal or coin, or placed upon an heraldic shield or beneath an engraving or illustration. Golden legend. See under Golden.\n\nTo tell or narrate, as a legend. Bp. Hall.",
-    "meaning": "legaand"
+    "userid": 9,
+    "word": "lege",
+    "meaningG": "To allege; to assert. [Obs.] Bp. Fisher.",
+    "meaning": "lif"
   }
 ]

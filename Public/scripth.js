@@ -1,6 +1,6 @@
-$(document).ready(function () {
+$(document).ready(function (){
 
-    function displayWord(wordData) {
+    function displayWord(wordData){
         const wordItem = $("<div class='word-item'></div>");
         const wordHeader = $("<h3></h3>").text(wordData.word);
         const meaningPara = $("<p></p>").text("Custom Meaning: " + wordData.meaning);
@@ -11,9 +11,13 @@ $(document).ready(function () {
         
         $("#wordList").append(wordItem);
     }
+    console.log("document.cookie",document.cookie)
 
     $.ajax({
         url: "/api/words",
+        headers: {
+            "csession": document.cookie.slice(6, )
+        },
         method: "GET",
         success: function (data) {
             // Display the existing words

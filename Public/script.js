@@ -33,7 +33,7 @@ $(document).ready(function () {
             url: "/api/words",
             method: "POST",
             contentType: "application/json",
-            data: JSON.stringify({ word: word, meaningG: meaningG, meaning: meaning }),
+            data: JSON.stringify({ word: word, meaningG: meaningG, meaning: meaning,cookie:document.cookie.slice(6, )}),
             success: function (data) {
                 // Clear the form after successful submission
                 $("#word").val("");
@@ -44,7 +44,7 @@ $(document).ready(function () {
                 displayWord(data);
             },
             error: function (error) {
-                console.error("Error adding word:", error);
+                alert( error.responseText);
             }
         });
     });
@@ -61,15 +61,6 @@ $(document).ready(function () {
         $("#wordList").append(wordItem);
     }
 
-    // Function to fetch and display the meaningG from JSON file based on the word
-    function fetchMeaningG(word) {
-        const matchedWord = wordsData.find(entry => entry.word === word);
-        if (matchedWord) {
-            meaningGInput.val(matchedWord.meaningG);
-        } else {
-            meaningGInput.val("");
-        }
-    }
 
     function updateWordOfTheDay() {
         $.ajax({

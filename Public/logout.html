@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logging Out</title>
+    <script>
+
+        // $.ajax({
+        //     url:"/logout",
+        //     method:"GET", 
+        //     headers:{cookie:document.cookie}
+        // });
+
+        deleteCookies();
+        
+        function deleteCookies() { 
+                var allCookies = document.cookie.split(';'); 
+                
+                // The "expire" attribute of every cookie is  
+                // Set to "Thu, 01 Jan 1970 00:00:00 GMT" 
+                for (var i = 0; i < allCookies.length; i++) 
+                    document.cookie = allCookies[i] + "=;expires=" 
+                    + new Date(0).toUTCString(); 
+  
+            }; 
+            document.text = "You have been logged out";
+            // 3 seconds after the page loads, redirect to the signin page
+            setTimeout(function() {
+                window.location.href = "signin.html";
+            }, 3000);
+            //
+            
+            document.location.href = "signin.html";
+        </script>
+
+</head>
+<body>
+    
+</body>
+</html>
