@@ -18,5 +18,6 @@ jobs:
         run: npm install
       - name: Build and Deploy
         run: 
-          node app.js   
+          node app.js    & 
+          background: true
           # echo "Node.js server started!"
