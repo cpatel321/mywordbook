@@ -1,0 +1,23 @@
+name: Node.js CI/CD
+
+on:
+  push:
+    branches:
+      - master  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  
+      - name: Install dependencies
+        run: npm install
+      - name: Build and Deploy
+        run: |
+          npm run build  
+          node app.js   
+          # echo "Node.js server started!"
