@@ -1,52 +1,7 @@
 [
   {
     "userid": 1,
-    "username": "example",
-    "password": "qwerty"
-  },
-  {
-    "userid": 2,
-    "username": "admin",
-    "password": "admin"
-  },
-  {
-    "userid": 3,
-    "username": "22110057",
-    "password": "qwerty"
-  },
-  {
-    "userid": 4,
-    "username": "cpatel321",
-    "password": "asdf"
-  },
-  {
-    "userid": 5,
-    "username": "mywordboook",
-    "password": "asdf"
-  },
-  {
-    "userid": 6,
-    "username": "chandrabhan.patel",
-    "password": "asdf"
-  },
-  {
-    "userid": 7,
-    "username": "potani",
-    "password": "potani"
-  },
-  {
-    "userid": 8,
-    "username": "78451",
-    "password": "adsfas"
-  },
-  {
-    "userid": 9,
-    "username": "OPPO",
-    "password": "OPPOO"
-  },
-  {
-    "userid": 10,
-    "username": "users",
-    "password": "asdf"
+    "username": "chandrabhan.patel@iitgn.ac.in",
+    "password": "8OTC92xYkW7CWPJGhRvqCR0U1CR6L8PhhpRGGxgW4Ts="
   }
 ]
