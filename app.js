@@ -4,7 +4,7 @@ const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 const { get } = require('http');
-
+const crypto = require('crypto');
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -12,6 +12,9 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
+function sha256(data) {
+  return crypto.createHash('sha256').update(data).digest('base64');
+}
 // Read word data history from the JSON file
 let wordsData = [];
 try {
@@ -138,7 +141,7 @@ app.post("/api/login",(req,res)=>{
   // matchedUser={username:"admin",password:"admin"}
   if (matchedUser) {
     // console.log("matchedUser",matchedUser);
-    if (matchedUser.password === password) {
+    if (sha256(matchedUser.password) === password) {
       // console.log("matchedUser",matchedUser)
       token=Math.floor(Math.random() * 1000000000000000);
       res.json({ success: true, token:token });
@@ -169,7 +172,7 @@ app.post("/api/register",(req,res)=>{
     const newUser = {
       userid: usersDict.length + 1,
       username: username,
-      password: password
+      password: sha256(password)
     };
 
     usersDict.push(newUser);

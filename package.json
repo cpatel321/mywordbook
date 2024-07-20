@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set NODE_ENV=production node index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +15,6 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
-    "mongodb": "^5.7.0",
     "path": "^0.12.7"
   }
 }
